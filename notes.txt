@@ -1,0 +1,24 @@
+GIT COMMANDS
+
+1) ls - list all the folders and files in the directory
+2) mkdir - create new directory 		Ex : mkdir java
+3) cd - change directory				Ex : cd java
+
+In any folder if we want to see the history of that folder means when it is created, what are all the changes made everything is saved on .git repository folder
+4) git init - .git repository is initialized using this command		Ex : git init
+5) ls -a   command will show all the hidden files within the folder
+6) ls .git - This is used to see what all these within the .git folder. This command will give the content within the files or folder
+
+
+7) touch - used to create a file 			Ex : touch names.txt
+8) git status - used to check the status of the files in the repository 		Ex : git status
+
+9) git add - used to add the file into the repository			Ex : git add names.txt
+
+10) git commmit -m "" - used to commit the file into repository			Ex : git commit -m "names.txt file is added"
+
+11) vi - used to add the content into the file 			Ex : vi names.txt
+12) :wq! - used to save the file with that content and quit that file 
+13) :q!	- used to quit the file without saving			
+
+14) cat - used to seen the content within the file				Ex : cat names.txt
