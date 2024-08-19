@@ -1,0 +1,86 @@
+GIT COMMANDS
+
+1) ls - list all the folders and files in the directory
+2) mkdir - create new directory 		Ex : mkdir java
+3) cd - change directory				Ex : cd java
+
+In any folder if we want to see the history of that folder means when it is created, what are all the changes made everything is saved on .git repository folder
+4) git init - .git repository is initialized using this command		Ex : git init
+5) ls -a   command will show all the hidden files within the folder
+6) ls .git - This is used to see what all these within the .git folder. This command will give the content within the files or folder
+
+
+7) touch - used to create a file 			Ex : touch names.txt
+8) git status - used to check the status of the files in the repository 		Ex : git status
+
+9) git add - used to add the file into the repository			Ex : git add names.txt
+
+10) git commmit -m "" - used to commit the file into repository			Ex : git commit -m "names.txt file is added"
+
+11) vi - used to add the content into the file 			Ex : vi names.txt
+12) :wq! - used to save the file with that content and quit that file 
+13) :q!	- used to quit the file without saving			
+
+14) cat - used to seen the content within the file				Ex : cat names.txt
+
+15) git add . (space) - used to commit all the files in the folder.			Ex : git add . 
+
+16) git restore --staged    - used to revert back after commit means we don't want to save that file	Ex : git restore --staged names.txt
+
+17) git config --global user.name "Your namee"		- Used to create a user name		Ex : git config --global user.name "Tej"
+		--if we remove --global that user is setted as default
+		
+18) git config --global user.email "your@example.com"		- used to create a user email	Ex : git config --global user.email "gowdat2014@gmail.com"
+		--if we remove --global that user email is setted as default
+		
+19) git log   -  used to check the history/log for that folder
+
+20) rm -rf names.txt	-	used to delete the file from the folder			Ex : rm -rf names.txt
+
+21) git stash - when you want to record the current state of the working directory and the index, but want to go back to a clean working directory
+		
+22) git stash pop - this command will take the content from the stash file and then apply those changes to our current working file
+
+23) git stash clear - used to clear all the records are there in stash permanently, we can't take that back.
+					- This command will delete all of the stashes that have been saved in the current repository.
+					- It is important to note that the git stash clear command cannot be undone. Once you have deleted a stash, it is gone forever. So, be sure to back up any important changes before using this command.
+					
+					
+					
+					
+					
+					
+					
+					
+					
+
+
+------------------------------------------Know we will learn how we will keep our local project in github
+
+1) First we need to initialize the git repository
+		Ex : git init
+
+
+
+2) git remote add origin url - To attach the github repository to our local project
+		Ex : git remote add origin https://github.com/teju2023/Practice
+		
+		here git - git command
+				remote means u r working with url
+				add means adding
+				origin means we are giving a name to our url which we are adding means name to our local project repository
+				
+	--name of our repository can be anything. But by convention, all the repository or folders are in our account(github account) they have a name called Origin.
+
+
+3) git remote -v : will show the all the urls that attached to our folder. But by this command, what are there in our folder is not going to show in github repository.
+
+4) The changes made in our folder(local project), to show in our url/our github repository. we need to do
+		git push origin branch
+			Ex : git push origin master
+				-here master is the branch
+
+
+
+				Hi "how r u?"
+			"I am Good"	

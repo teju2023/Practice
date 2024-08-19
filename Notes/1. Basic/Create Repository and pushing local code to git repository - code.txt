@@ -1,0 +1,173 @@
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures
+$ cd Java
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ git remote add origin https://github.com/teju2023/Practice
+error: remote origin already exists.
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ git remote -v
+origin  https://github.com/teju2023/Practice (fetch)
+origin  https://github.com/teju2023/Practice (push)
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ ^C
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ ^C
+
+
+
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ git push origin master
+Everything up-to-date
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ touch surnames.txt
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ git add .
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ git commit -m "surnames.txt added"
+[master 8bd9aad] surnames.txt added
+ 3 files changed, 93 insertions(+), 1 deletion(-)
+ create mode 100644 Study_material.txt
+ create mode 100644 surnames.txt
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ git push origin master
+Enumerating objects: 6, done.
+Counting objects: 100% (6/6), done.
+Delta compression using up to 8 threads
+Compressing objects: 100% (4/4), done.
+Writing objects: 100% (4/4), 1.48 KiB | 1.48 MiB/s, done.
+Total 4 (delta 3), reused 0 (delta 0), pack-reused 0 (from 0)
+remote: Resolving deltas: 100% (3/3), completed with 2 local objects.
+To https://github.com/teju2023/Practice
+   7ef5173..8bd9aad  master -> master
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ cd pictures/
+bash: cd: pictures/: No such file or directory
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/Java (master)
+$ cd ..
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures
+$ mkdir sumne
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures
+$ cd sumne
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne
+$ git sumne111.txt
+git: 'sumne111.txt' is not a git command. See 'git --help'.
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne
+$ touch sumne111.txt
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne
+$ git add .
+fatal: not a git repository (or any of the parent directories): .git
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne
+$ git remote add origin https://github.com/teju2023/Sumne
+fatal: not a git repository (or any of the parent directories): .git
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne
+$ git init
+Initialized empty Git repository in C:/Users/gowda/OneDrive/Pictures/sumne/.git/
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (master)
+$ git remote add origin https://github.com/teju2023/Sumne
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (master)
+$ git remote - v
+error: unknown subcommand: `-'
+usage: git remote [-v | --verbose]
+   or: git remote add [-t <branch>] [-m <master>] [-f] [--tags | --no-tags] [--mirror=<fetch|push>] <name> <url>
+   or: git remote rename [--[no-]progress] <old> <new>
+   or: git remote remove <name>
+   or: git remote set-head <name> (-a | --auto | -d | --delete | <branch>)
+   or: git remote [-v | --verbose] show [-n] <name>
+   or: git remote prune [-n | --dry-run] <name>
+   or: git remote [-v | --verbose] update [-p | --prune] [(<group> | <remote>)...]
+   or: git remote set-branches [--add] <name> <branch>...
+   or: git remote get-url [--push] [--all] <name>
+   or: git remote set-url [--push] <name> <newurl> [<oldurl>]
+   or: git remote set-url --add <name> <newurl>
+   or: git remote set-url --delete <name> <url>
+
+    -v, --[no-]verbose    be verbose; must be placed before a subcommand
+
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (master)
+$ git push origin branch
+error: src refspec branch does not match any
+error: failed to push some refs to 'https://github.com/teju2023/Sumne'
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (master)
+$ ^C
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (master)
+$ git checkout -b branch
+Switched to a new branch 'branch'
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git push origin branch
+error: src refspec branch does not match any
+error: failed to push some refs to 'https://github.com/teju2023/Sumne'
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git add .
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git commit -m "Initial commit on branch"
+Author identity unknown
+
+*** Please tell me who you are.
+
+Run
+
+  git config --global user.email "you@example.com"
+  git config --global user.name "Your Name"
+
+to set your account's default identity.
+Omit --global to set the identity only in this repository.
+
+fatal: unable to auto-detect email address (got 'gowda@DESKTOP-SJ78I9C.(none)')
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git push origin branch
+error: src refspec branch does not match any
+error: failed to push some refs to 'https://github.com/teju2023/Sumne'
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ ^C
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git config user.email "gowdat2014@gmail.com"
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git add .
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git commit -m "Initial commit on branch"
+[branch (root-commit) 685164c] Initial commit on branch
+ 1 file changed, 0 insertions(+), 0 deletions(-)
+ create mode 100644 sumne111.txt
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$ git push origin branch
+Enumerating objects: 3, done.
+Counting objects: 100% (3/3), done.
+Writing objects: 100% (3/3), 219 bytes | 219.00 KiB/s, done.
+Total 3 (delta 0), reused 0 (delta 0), pack-reused 0 (from 0)
+To https://github.com/teju2023/Sumne
+ * [new branch]      branch -> branch
+
+gowda@DESKTOP-SJ78I9C MINGW64 ~/OneDrive/Pictures/sumne (branch)
+$
